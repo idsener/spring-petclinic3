@@ -29,4 +29,4 @@ jobs:
       - name: Build with Maven Wrapper
         run: ./mvnw -B package
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag testimage:$(date +%s)
+        run: docker build . --file .devcontainer/Dockerfile --tag testimage:$(date +%s)
