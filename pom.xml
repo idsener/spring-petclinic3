@@ -290,7 +290,9 @@
     <repository>
       <id>spring-snapshots</id>
       <name>Spring Snapshots</name>
-      <!--url>https://repo.spring.io/snapshot</url-->
+      <!--
+      <url>https://repo.spring.io/snapshot</url>
+      -->
       <url>https://repo1.maven.org/maven2/</url-->
       
       <snapshots>
@@ -300,7 +302,9 @@
     <repository>
       <id>spring-milestones</id>
       <name>Spring Milestones</name>
-      <!--url>https://repo.spring.io/milestone</url-->
+      <!--
+      <url>https://repo.spring.io/milestone</url>
+      -->
       <url>https://repo1.maven.org/maven2/</url>
       <snapshots>
         <enabled>false</enabled>
@@ -312,7 +316,9 @@
     <pluginRepository>
       <id>spring-snapshots</id>
       <name>Spring Snapshots</name>
-      <!--url>https://repo.spring.io/snapshot</url-->
+      <!--
+      <url>https://repo.spring.io/snapshot</url>
+      -->
       <url>https://repo1.maven.org/maven2/</url>
       <snapshots>
         <enabled>true</enabled>
@@ -321,7 +327,9 @@
     <pluginRepository>
       <id>spring-milestones</id>
       <name>Spring Milestones</name>
-      <!--url>https://repo.spring.io/milestone</url-->
+      <!--
+      <url>https://repo.spring.io/milestone</url>
+      -->
        <url>https://repo1.maven.org/maven2/</url>
       <snapshots>
         <enabled>false</enabled>
