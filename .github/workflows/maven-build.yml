@@ -26,8 +26,8 @@ jobs:
           java-version: ${{matrix.java}}
           distribution: 'adopt'
           cache: maven
-      - name: Build with Maven Wrapper
-        run: ./mvnw -B package
+    #  - name: Build with Maven Wrapper
+    #    run: ./mvnw -B package
      # - name: Build the Docker image
      #   run: docker build . --file .devcontainer/Dockerfile --tag ilaysener.jfrog.io/repo-docker-docker/testimage:$(date +%s)
       
@@ -42,9 +42,10 @@ jobs:
         name: Build & push Docker image
         with:
           image: repo-docker-docker/testimage
-          tags: v1, latest
+          tags: latest
           registry: ilaysener.jfrog.io
-          dockerfile: .devcontainer/Dockerfile
+          #dockerfile: .devcontainer/Dockerfile
+          dockerfile: ./Dockerfile
           username: ${{ secrets.JF_USERNAME }}
           password: ${{ secrets.JF_TOKEN }}
 
