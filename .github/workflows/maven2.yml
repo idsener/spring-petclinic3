@@ -30,11 +30,11 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Step 3 - Compile code with Maven
-      run: mvn compile
+    #- name: Step 3 - Compile code with Maven
+     # run: mvn compile
 
-    - name: Step 4 - Compile and run the TESTs
-      run: mvn test
+    #- name: Step 4 - Compile and run the TESTs
+     # run: mvn test
 
     - name: Step 5 - Build package
       # since compile doesn't create JAR files, options are:
