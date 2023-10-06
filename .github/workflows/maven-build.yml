@@ -26,14 +26,10 @@ jobs:
           java-version: ${{matrix.java}}
           distribution: 'adopt'
           cache: maven
-      - name: Build with Maven Wrapper
-        run: ./mvnw -B package
-
-      - name: Run test cases
-        run: ./mnvn test
-
-      - name: Build the Docker image
-        run: docker build . --file ./Dockerfile --tag --platform linux/amd64,linux/arm64 ilaysener.jfrog.io/ilay-docker/pet-clinic:latest
+    #  - name: Build with Maven Wrapper
+    #    run: ./mvnw -B package
+     # - name: Build the Docker image
+     #   run: docker build . --file .devcontainer/Dockerfile --tag ilaysener.jfrog.io/repo-docker-docker/testimage:$(date +%s)
       
      # - uses: jfrog/setup-jfrog-cli@v3
      #   env:
@@ -42,19 +38,19 @@ jobs:
      # - run: |
      #     jf rt ping
 
-#      - uses: mr-smithers-excellent/docker-build-push@v6
-#        name: Build & push Docker image
-#        with:
+      - uses: mr-smithers-excellent/docker-build-push@v6
+        name: Build & push Docker image
+        with:
           #image: repo-docker-docker/testimage
-#          image: ilay-docker/pet-clinic
-#          tags: latest
-#          registry: ilaysener.jfrog.io
-#          #publish images for x84 and arm 64 architectures
-#          multiPlatform: true
-#          platform: linux/amd64,linux/arm64
-#          dockerfile: ./Dockerfile
-#          username: ${{ secrets.JF_USERNAME }}
-#          password: ${{ secrets.JF_TOKEN }}
+          image: ilay-docker/pet-clinic
+          tags: latest
+          registry: ilaysener.jfrog.io
+          #publish images for x84 and arm 64 architectures
+          multiPlatform: true
+          platform: linux/amd64,linux/arm64
+          dockerfile: ./Dockerfile
+          username: ${{ secrets.JF_USERNAME }}
+          password: ${{ secrets.JF_TOKEN }}
 
      
 
