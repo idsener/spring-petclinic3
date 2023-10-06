@@ -22,13 +22,54 @@ jobs:
     steps:
     - name: Step 1 - checkout the code
       uses: actions/checkout@v3
+
     - name: Step 2 - Set up JDK 17
       uses: actions/setup-java@v3
       with:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Step 3 - compile code with Maven
+
+    - name: Step 3 - Compile code with Maven
       run: mvn compile
-    - name: Step 4 - compile and run TEST code
+
+    - name: Step 4 - Compile and run the TESTs
       run: mvn test
+
+    - name: Step 5 - Build package
+      # since compile doesn't create JAR files, options are:
+      # - run 'mvn package -DskipTests' instead of 'mvn compile', but the homework steps used the word 'compile'
+      # - run 'mvn package' and remove steps 3 and 4 as it compiles the code, resolve dependencies and runs TESTs
+      # - use Java command to create the JAR file(s). But I think it is out of scope...not necessary
+      run: mvn package -DskipTests
+  
+ 
+    - name: Step 7 - Build & push Docker image
+      uses: mr-smithers-excellent/docker-build-push@v6
+        
+      with:
+        image: ilay-docker/pet-clinic2
+        tags: latest
+        registry: ilaysener.jfrog.io
+        #publish images for x84 and arm 64 architectures
+        multiPlatform: true
+        platform: linux/amd64,linux/arm64
+        dockerfile: ./Dockerfile
+        username: ${{ secrets.JF_USERNAME }}
+        password: ${{ secrets.JF_TOKEN }}
+
+       #packageDocker:    
+    
+   #     runs-on: ubuntu latest
+    #    needs: build
+     #   steps:
+
+      #  - name: Step 6 -
+      #    uses: actions/checkout@v3
+      #  - name: Step 7 - 
+      #    uses: actions/setup-java@v3
+      #    with:
+      #      java-version: '17'
+      #      distribution: 'temurin'
+      #  - run:
+

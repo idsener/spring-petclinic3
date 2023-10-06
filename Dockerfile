@@ -11,14 +11,11 @@ RUN ./mvnw dependency:resolve
 COPY src ./src
 
 # use the above BASE image as base to build application 
-FROM base as build
+#FROM base as build
 # run maven package 
 RUN ./mvnw package
 
-# use the above BASE image as base for TESTING
-FROM base as test
-# run application test scripts
-CMD ["./mvnw", "test"]
+
 
 # new temurin java base image
 FROM eclipse-temurin:17-jre-jammy as production
