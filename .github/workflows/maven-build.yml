@@ -46,7 +46,7 @@ jobs:
           tags: latest
           registry: ilaysener.jfrog.io
           #dockerfile: .devcontainer/Dockerfile
-          platform: linux/amd64, linux/arm64/v8
+          platform: linux/amd64,linux/arm64
           dockerfile: ./Dockerfile
           username: ${{ secrets.JF_USERNAME }}
           password: ${{ secrets.JF_TOKEN }}
