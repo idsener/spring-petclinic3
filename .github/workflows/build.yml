@@ -1,12 +1,9 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
-
 name: Java CI with Maven
 
 
 on:
- # push:
- #   branches: [ main ]
+  push:
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -26,10 +23,11 @@ jobs:
           java-version: ${{matrix.java}}
           distribution: 'adopt'
           cache: maven
+    ######
     #  - name: Build with Maven Wrapper
     #    run: ./mvnw -B package
      # - name: Build the Docker image
-     #   run: docker build . --file .devcontainer/Dockerfile --tag ilaysener.jfrog.io/repo-docker-docker/testimage:$(date +%s)
+     #   run: docker build . --tag ilaysener.jfrog.io/ilay-docker/petclinic
       
      # - uses: jfrog/setup-jfrog-cli@v3
      #   env:
@@ -37,11 +35,11 @@ jobs:
      #     JF_ACCESS_TOKEN: ${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}
      # - run: |
      #     jf rt ping
-
+    #########
+    
       - uses: mr-smithers-excellent/docker-build-push@v6
         name: Build & push Docker image
         with:
-          #image: repo-docker-docker/testimage
           image: ilay-docker/pet-clinic
           tags: latest
           registry: ilaysener.jfrog.io
