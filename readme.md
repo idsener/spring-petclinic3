@@ -45,7 +45,10 @@ Publish the image to JFrog Artifactory in your pipeline
 2 approaches implemented.
 A) build, test, package and deploy features are all captured inside the 'Dockerfile'. Github actions workflow, 'build.yml', utilises this Dockerfile to build, test, package, and deploy
 to artifactory.
-B) The latter utilises multiple steps in the Github actions to build, test, package and deploy the docker image to artifactory. A different 'Dockerfile' used in this approach. (different project URL)
+B) The latter utilises multiple steps in the Github actions to build, test, package and deploy the docker image to artifactory. A different 'Dockerfile' used in this approach.
+
+This is version refers to option B.
+
 ```
 
 3. Make sure all dependencies are resolved from Maven Central
@@ -58,7 +61,7 @@ pom.xml file now repository tags updated to resolve dependencies from Maven Cent
 
 1. GitHub link to the repo including
 ```
-https://github.com/idsener/spring-petclinic
+https://github.com/idsener/spring-petclinic2
 ```
 
 Github Actions workflow files within that repo
@@ -76,9 +79,9 @@ readme.md file explaining the work and how to run the project
 readme.md
 
 #pull docker image from artifactory. AMD64 and ARM64 versions of the image are available with anonymous pull access.
-docker pull ilaysener.jfrog.io/ilay-docker/pet-clinic:latest
+docker pull ilaysener.jfrog.io/ilay-docker/pet-clinic2:latest
 #run the docker image. 
-docker run -d --publish 8080:8080 ilaysener.jfrog.io/ilay-docker/pet-clinic:latest
+docker run -d --publish 8080:8080 ilaysener.jfrog.io/ilay-docker/pet-clinic2:latest
 #access the application on localhost:8080 on your browser
 ```
 
@@ -96,9 +99,9 @@ XRay Scan Data export files are available under 'XRay Reports' folder under root
 ## 1 - Simple github actions
 ```
 #Github repository for this project
-git clone https://github.com/spring-projects/spring-petclinic.git
+git clone https://github.com/spring-projects/spring-petclinic2.git
 
 The docker image for the application is published to Artifactory,
-https://ilaysener.jfrog.io/artifactory/ilay-docker/pet-clinic/
+https://ilaysener.jfrog.io/artifactory/ilay-docker/pet-clinic2/
 
 ```
