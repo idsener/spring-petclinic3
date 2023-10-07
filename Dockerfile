@@ -25,7 +25,7 @@ FROM eclipse-temurin:17-jdk-jammy as base
 # copy packages from above BUILD image into this image
 #COPY --from=build /app/target/spring-petclinic-*.jar /spring-petclinic.jar
 #COPY /app/target/spring-petclinic-*.jar /spring-petclinic.jar
-ADD target/spring-petclinic-*.jar /spring-petclinic.jar
+ADD /target/spring-petclinic-*.jar /spring-petclinic.jar
 # expose port 8080 from image
 #EXPOSE 8080
 # run the application
