@@ -39,7 +39,7 @@ jobs:
     - name: Echo github workspace path
       run: |
         echo ${{ github.workspace }}
-        echo lstat target
+        echo pwd
 
   
   buildImage:
