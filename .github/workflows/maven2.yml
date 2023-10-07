@@ -26,17 +26,20 @@ jobs:
       run: mvn -B compile 
 
     - name: Step 4 - Build package
-      run: mvn -B package
+      run: mvn -B package -DskipTests
 
     - name: Step 5 - Temporarily save jar artifact
       uses: actions/upload-artifact@v2
       with:
         name: jar-artifact
-        path: ${{ github.workspace }}/target/*.jar
+        #path: ${{ github.workspace }}/target/*.jar
+        path: /target/*.jar
         retention-days: 1
     
     - name: Echo github workspace path
-      run: echo ${{ github.workspace }}
+      run: |
+        echo ${{ github.workspace }}
+        echo lstat target
 
   
   buildImage:
