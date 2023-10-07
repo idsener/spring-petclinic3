@@ -41,22 +41,24 @@ jobs:
       # - run 'mvn package -DskipTests' instead of 'mvn compile', but the homework steps used the word 'compile'
       # - run 'mvn package' and remove steps 3 and 4 as it compiles the code, resolve dependencies and runs TESTs
       # - use Java command to create the JAR file(s). But I think it is out of scope...not necessary
-      run: mvn package -DskipTests
+      run: mvn package
   
  
-    - name: Step 7 - Build & push Docker image
-      uses: mr-smithers-excellent/docker-build-push@v6
+   # - name: Step 7 - Build & push Docker image
+   #   uses: mr-smithers-excellent/docker-build-push@v6
         
-      with:
-        image: ilay-docker/pet-clinic2
-        tags: latest
-        registry: ilaysener.jfrog.io
+   #   with:
+   #     image: ilay-docker/pet-clinic2
+   #     tags: latest
+   #     registry: ilaysener.jfrog.io
         #publish images for x84 and arm 64 architectures
-        multiPlatform: true
-        platform: linux/amd64,linux/arm64
-        dockerfile: ./Dockerfile
-        username: ${{ secrets.JF_USERNAME }}
-        password: ${{ secrets.JF_TOKEN }}
+   #     multiPlatform: true
+   #     platform: linux/amd64,linux/arm64
+   #     dockerfile: ./Dockerfile
+   #     username: ${{ secrets.JF_USERNAME }}
+   #     password: ${{ secrets.JF_TOKEN }}
+
+
 
        #packageDocker:    
     
