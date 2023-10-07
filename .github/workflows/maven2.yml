@@ -55,8 +55,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       
-      - name: Step 7 - Copy jars
-        run: mkdir app && cp /app/target/spring-petclinic-*.jar /spring-petclinic.jar
+      - name: Step 1 - checkout the code
+        uses: actions/checkout@v3
+
+      #- name: Step 7 - Copy jars
+      #  run: mkdir app && cp /app/target/spring-petclinic-*.jar /spring-petclinic.jar
 
 
    # - name: Step 7 - Build & push Docker image
