@@ -20,10 +20,10 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: mvn -B compile
+        cache: maven
     
     - name: Step 3 - Compile code
-      run: mvn compile 
+      run: mvn -B compile 
 
     - name: Step 4 - Build package
       run: mvn -B package -DskipTests
