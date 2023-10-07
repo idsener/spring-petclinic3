@@ -41,7 +41,7 @@ jobs:
       # - run 'mvn package -DskipTests' instead of 'mvn compile', but the homework steps used the word 'compile'
       # - run 'mvn package' and remove steps 3 and 4 as it compiles the code, resolve dependencies and runs TESTs
       # - use Java command to create the JAR file(s). But I think it is out of scope...not necessary
-      run: mvn package
+      run: mvn package -DskipTests
   
   
   buildImage:    
