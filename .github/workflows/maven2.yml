@@ -44,6 +44,8 @@ jobs:
     needs: buildApp
 
     steps:
+    - uses: actions/checkout@v2
+    
     - name: Step 6 - Download jar
       uses: actions/download-artifact@v1
       with:
@@ -51,7 +53,7 @@ jobs:
           path: .
 
     - name: Step 8 - Build Docker image
-      run: docker build . --tag dsener/petclinic2:latest
+      run: docker build . -t dsener/petclinic2:latest
 
     - name: Step 9 - Login to DockerHub
       uses: docker/login-action@v1
