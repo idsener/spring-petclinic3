@@ -1,12 +1,6 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
 
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
 
-name: Java CI - Mvn + GHub + Dckr + JFrog
+name: Java Maven Build & Publish Artifact
 
 on:
   push:
@@ -15,81 +9,34 @@ on:
     branches: [ "main" ]
 
 jobs:
-  buildApp:
+  build_test:
 
     runs-on: ubuntu-latest
 
     steps:
-    - name: Step 1 - checkout the code
-      uses: actions/checkout@v3
-
-    - name: Step 2 - Set up JDK 17
+    - uses: actions/checkout@v3
+    - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
 
-    #- name: Step 3 - Compile code with Maven
-     # run: mvn compile
-
-    #- name: Step 4 - Compile and run the TESTs
-     # run: mvn test
-
-    - name: Step 5 - Build package
-      # since compile doesn't create JAR files, options are:
-      # - run 'mvn package -DskipTests' instead of 'mvn compile', but the homework steps used the word 'compile'
-      # - run 'mvn package' and remove steps 3 and 4 as it compiles the code, resolve dependencies and runs TESTs
-      # - use Java command to create the JAR file(s). But I think it is out of scope...not necessary
-      run: mvn package -DskipTests
-  
-  
-  buildImage:    
-    
-    runs-on: ubuntu latest
-    needs: buildApp
+   
+  publish-job:
+    runs-on: ubuntu-latest
+    needs: build_test
     steps:
-      - name: Step 6 - Set up JDK 17
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-      
-      - name: Step 1 - checkout the code
-        uses: actions/checkout@v3
-
-      #- name: Step 7 - Copy jars
-      #  run: mkdir app && cp /app/target/spring-petclinic-*.jar /spring-petclinic.jar
-
-
-   # - name: Step 7 - Build & push Docker image
-   #   uses: mr-smithers-excellent/docker-build-push@v6
-        
-   #   with:
-   #     image: ilay-docker/pet-clinic2
-   #     tags: latest
-   #     registry: ilaysener.jfrog.io
-        #publish images for x84 and arm 64 architectures
-   #     multiPlatform: true
-   #     platform: linux/amd64,linux/arm64
-   #     dockerfile: ./Dockerfile
-   #     username: ${{ secrets.JF_USERNAME }}
-   #     password: ${{ secrets.JF_TOKEN }}
-
-
-
-       #packageDocker:    
-    
-   #     runs-on: ubuntu latest
-    #    needs: build
-     #   steps:
-
-      #  - name: Step 6 -
-      #    uses: actions/checkout@v3
-      #  - name: Step 7 - 
-      #    uses: actions/setup-java@v3
-      #    with:
-      #      java-version: '17'
-      #      distribution: 'temurin'
-      #  - run:
-
+    - uses: actions/checkout@v3
+    - uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    - run: mvn --batch-mode --update-snapshots verify
+    - run: mkdir staging && cp target/*.jar staging
+    - uses: actions/upload-artifact@v3
+      with:
+        name: Package
+        path: staging
