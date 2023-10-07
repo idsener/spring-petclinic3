@@ -32,11 +32,11 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: jar-artifact
-        path: ${{ github.workspace }}/spring-petclinic/target/*.jar
+        path: ${{ github.workspace }}/target/*.jar
         retention-days: 1
     
     - name: Echo github workspace path
-      run: echo ${{ github.workspace }}/spring-petclinic/target/
+      run: echo ${{ github.workspace }}/target/
 
   
   buildImage:
