@@ -50,7 +50,10 @@ jobs:
           name: vetClinic-jar
           path: .
 
-    - name: Step 7 - Login to DockerHub
+    - name: Step 8 - Build Docker image
+      run: docker build . --t dsener/petclinic2:latest
+
+    - name: Step 9 - Login to DockerHub
       uses: docker/login-action@v1
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
