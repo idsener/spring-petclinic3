@@ -39,10 +39,11 @@ jobs:
 #        path: target/*.jar
 #        retention-days: 1
     
- #   - name: Echo github workspace path
- #     run: |
- #       echo ${{ github.workspace }}
- #       pwd
+    - name: Echo github workspace path
+      run: |
+        echo ${{ github.workspace }}
+        pwd
+        ls -la
 
   
  # buildImage:
