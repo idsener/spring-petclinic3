@@ -5,8 +5,6 @@ name: Java CI - Mvn + GHub + Dckr + JFrog
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   buildApp:
@@ -22,20 +20,23 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: maven
+        cache: mvn -B compile
     
     - name: Step 3 - Compile code
       run: mvn compile 
 
     - name: Step 4 - Build package
-      run: mvn package -DskipTests
+      run: mvn -B package -DskipTests
 
     - name: Step 5 - Temporarily save jar artifact
       uses: actions/upload-artifact@v2
       with:
-        name: vetClinic-jar
-        path: ${{ github.workspace }}/target/*.jar
+        name: jar-artifact
+        path: ${{ github.workspace }}/spring-petclinic/target/*.jar
         retention-days: 1
+    
+    - name: Echo github workspace path
+      run: echo ${{ github.workspace }}/spring-petclinic/target/
 
   
   buildImage:
@@ -44,12 +45,12 @@ jobs:
     needs: buildApp
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: Step 6 - Download jar
       uses: actions/download-artifact@v1
       with:
-          name: vetClinic-jar
+          name: jar-artifact
           path: target/
 
     - name: Step 8 - Build Docker image
