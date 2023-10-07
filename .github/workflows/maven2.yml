@@ -15,7 +15,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  buildApp:
 
     runs-on: ubuntu-latest
 
@@ -43,7 +43,22 @@ jobs:
       # - use Java command to create the JAR file(s). But I think it is out of scope...not necessary
       run: mvn package
   
- 
+  
+  buildImage:    
+    
+    runs-on: ubuntu latest
+    needs: buildApp
+    steps:
+      - name: Step 6 - Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      
+      - name: Step 7 - Copy jars
+        run: mkdir app && cp /app/target/spring-petclinic-*.jar /spring-petclinic.jar
+
+
    # - name: Step 7 - Build & push Docker image
    #   uses: mr-smithers-excellent/docker-build-push@v6
         

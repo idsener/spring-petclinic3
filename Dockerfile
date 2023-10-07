@@ -18,13 +18,13 @@
 # use the above BASE image as base to build application 
 #FROM base as build
 # run maven package 
-#RUN ./mvnw package -DskipTests
+#RUN ./mvnw package
 
 # new temurin java base image
 #FROM eclipse-temurin:17-jre-jammy as production
-# expose port 8080 from image
-#EXPOSE 8080
 # copy packages from above BUILD image into this image
 #COPY --from=build /app/target/spring-petclinic-*.jar /spring-petclinic.jar
+# expose port 8080 from image
+#EXPOSE 8080
 # run the application
-CMD ["java", "-jar", "/spring-petclinic.jar"]
+#CMD ["java", "-jar", "/spring-petclinic.jar"]
