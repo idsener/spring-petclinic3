@@ -51,7 +51,7 @@ jobs:
           path: .
 
     - name: Step 8 - Build Docker image
-      run: docker build . --t dsener/petclinic2:latest
+      run: docker build . --tag dsener/petclinic2:latest
 
     - name: Step 9 - Login to DockerHub
       uses: docker/login-action@v1
