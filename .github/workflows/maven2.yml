@@ -56,10 +56,11 @@ jobs:
         name: jar-artifact
         path: target/
     
-    - name list directories and files
+    - name: list directories and files
       run: |
         pwd
-        ls        
+        ls -la
+        ls -la target
 
     - name: Step 8 - Build Docker image
       run: docker build . -t dsener/petclinic2:latest
