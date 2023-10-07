@@ -26,13 +26,13 @@ jobs:
       run: mvn -B compile 
 
     - name: Step 4 - Build package
-      run: mvn -B package -DskipTests
+      run: mvn -B package
 
     - name: Step 5 - Temporarily save jar artifact
       uses: actions/upload-artifact@v2
       with:
         name: jar-artifact
-        path: ${{ github.workspace }}/spring-petclinic/target/*.jar
+        path: ${{ github.workspace }}/my-app/target/*.jar
         retention-days: 1
     
     - name: Echo github workspace path
@@ -50,8 +50,8 @@ jobs:
     - name: Step 6 - Download jar
       uses: actions/download-artifact@v1
       with:
-          name: jar-artifact
-          path: target/
+        name: jar-artifact
+        path: target/
 
     - name: Step 8 - Build Docker image
       run: docker build . -t dsener/petclinic2:latest
