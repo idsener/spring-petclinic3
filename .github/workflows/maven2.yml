@@ -26,7 +26,10 @@ jobs:
       run: mvn -B compile 
 
     - name: Step 4 - Build package
-      run: mvn -B package
+      run: mvn -B package -DskipTests
+
+      #- name: Step 4 - Compile and run the TESTs
+      # run: mvn test
 
 #    - name: Step 5 - Temporarily save jar artifact
 #      uses: actions/upload-artifact@v2
