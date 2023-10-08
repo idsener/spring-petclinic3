@@ -36,14 +36,15 @@ jobs:
       with:
         image: dsener/petclinic2
         tags: latest
-        #registry: ilaysener.jfrog.io
-        registry: registry.hub.docker.com
-        #publish images for x84 and arm 64 architectures
+        registry: ilaysener.jfrog.io
+        #registry: registry.hub.docker.com
+        #publish images for linux amd64 and arm64 architectures (I am using mac M1)
         multiPlatform: true
         platform: linux/amd64,linux/arm64
-        #dockerfile: ./Dockerfile
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        username: ${{ secrets.JF_USERNAME }}
+        password: ${{ secrets.JF_TOKEN }}
+        #username: ${{ secrets.DOCKERHUB_USERNAME }}
+        #password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     
 #    - name: Step 8 - Build Docker image
