@@ -22,52 +22,26 @@ jobs:
         distribution: 'temurin'
         cache: maven
     
-    - name: Step 3 - Compile code
-      run: mvn -B compile 
+    - name: Step 3 - Compile the code
+      run: mvn -B compile     
 
-    - name: Step 4 - Build package
-      run: mvn -B package -DskipTests
+    - name: Step 4 - Run the tests
+      run: mvn test
 
-      #- name: Step 4 - Compile and run the TESTs
-      # run: mvn test
-
-#    - name: Step 5 - Temporarily save jar artifact
-#      uses: actions/upload-artifact@v2
-#      with:
-#        name: jar-artifact
-#        #path: ${{ github.workspace }}/target/*.jar
-#        path: target/*.jar
-#        retention-days: 1
     
-    - name: Echo github workspace path
-      run: |
-        echo ${{ github.workspace }}
-        pwd
-        ls -la
-        cp target/spring-petclinic-*.jar spring-petclinic.jar
-
+    
   
- # buildImage:
-
- #   runs-on: ubuntu-latest
- #   needs: buildApp
-
- #   steps:
- #  - uses: actions/checkout@v3
+    - name: Step 5 - Package the project as a runnable Docker image
+      run: | 
+        mvn -B package -DskipTests
+        # The following is necessary as .dockerignore has reference to 'target' folder. You can remove the below if you exclude 'target' 
+        # folder from the .dockerignore.
+        cp target/spring-petclinic-*.jar spring-petclinic.jar  
+        
     
- #   - name: Step 6 - Download jar
- #     uses: actions/download-artifact@v1
- #     with:
- #       name: jar-artifact
- #       path: target/
-    
-    - name: list directories and files
-      run: |
-        #pwd
-        #ls -la
-        ls -la /home/runner/work/spring-petclinic2/spring-petclinic2
-        ls -la target
+  
 
+ 
     - name: Step 8 - Build Docker image
       run: |
         docker build . -t dsener/petclinic2:latest --platform=linux/arm64
@@ -96,14 +70,4 @@ jobs:
 #        password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     
-    #- uses: actions/checkout@v3
-    #- uses: actions/setup-java@v3
-    #  with:
-    #    java-version: '17'
-    #    distribution: 'temurin'
-    #- run: mvn --batch-mode --update-snapshots verify
-    #- run: mkdir staging && cp target/*.jar staging
-    #- uses: actions/upload-artifact@v3
-    #  with:
-    #    name: Package
-    #    path: staging
+
