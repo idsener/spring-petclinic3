@@ -35,6 +35,11 @@ jobs:
       run: | 
         mvn -B package -DskipTests        
 
+    - name: list directories
+      run: |
+        pwd
+        ls -la
+        ls -la target
  
     - name: Step 8 - Build Docker image
       run: |
