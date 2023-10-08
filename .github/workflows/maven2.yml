@@ -34,15 +34,19 @@ jobs:
     
     - uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: dsener/petclinic2
+        #below for dockerhub
+        #image: dsener/petclinic2
+        image: ilay-docker/pet-clinic2
         tags: latest
         registry: ilaysener.jfrog.io
+        #below for dockerhub registry
         #registry: registry.hub.docker.com
         #publish images for linux amd64 and arm64 architectures (I am using mac M1)
         multiPlatform: true
         platform: linux/amd64,linux/arm64
         username: ${{ secrets.JF_USERNAME }}
         password: ${{ secrets.JF_TOKEN }}
+        #dockerhub credentials
         #username: ${{ secrets.DOCKERHUB_USERNAME }}
         #password: ${{ secrets.DOCKERHUB_TOKEN }}
 
