@@ -28,42 +28,34 @@ jobs:
     #- name: Step 4 - Run the tests
       #run: mvn test
 
-    
-    
-  
     - name: Step 5 - Package the project as a runnable Docker image
       run: | 
         mvn -B package -DskipTests        
- 
-    - name: Step 8 - Build Docker image
-      run: |
-        #docker build . -t dsener/petclinic2:latest --platform=linux/arm64
-        docker buildx create --use
-        docker buildx build --platform=linux/amd64,linux/arm64 -t dsener/petclinicmulti:latest .
-        
-
-    - name: Step 9 - Login to DockerHub
-      uses: docker/login-action@v1
-      with:
+        uses: mr-smithers-excellent/docker-build-push@v6
+        with:
+        image: dsener/petclinic2
+        tags: latest
+        #registry: ilaysener.jfrog.io
+        registry: registry.hub.docker.com
+        #publish images for x84 and arm 64 architectures
+        multiPlatform: true
+        platform: linux/amd64,linux/arm64
+        #dockerfile: ./Dockerfile
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Docker push
-      run: docker push dsener/petclinicmulti:latest
+    
+#    - name: Step 8 - Build Docker image
+#      run: |
+#        docker build . -t dsener/petclinic2:latest        
 
-#    - uses: mr-smithers-excellent/docker-build-push@v6
-#      name: Build & push Docker image
+#    - name: Step 9 - Login to DockerHub
+#      uses: docker/login-action@v1
 #      with:
-#        image: dsener/petclinic2
-#        tags: latest
-#        #registry: ilaysener.jfrog.io
-#        registry: registry.hub.docker.com
-#          #publish images for x84 and arm 64 architectures
-#        multiPlatform: true
-#        platform: linux/amd64,linux/arm64
-#        #dockerfile: ./Dockerfile
 #        username: ${{ secrets.DOCKERHUB_USERNAME }}
 #        password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    
+ #   - name: Docker push
+ #     run: docker push dsener/petclinicmulti:latest
+
 
