@@ -65,7 +65,7 @@ jobs:
         #pwd
         #ls -la
         ls -la /home/runner/work/spring-petclinic2/spring-petclinic2
-        ls -la /target
+        ls -la target
 
     - name: Step 8 - Build Docker image
       run: |
