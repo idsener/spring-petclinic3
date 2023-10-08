@@ -44,6 +44,7 @@ jobs:
         echo ${{ github.workspace }}
         pwd
         ls -la
+        cp target/spring-petclinic-*.jar /spring-petclinic.jar
 
   
  # buildImage:
