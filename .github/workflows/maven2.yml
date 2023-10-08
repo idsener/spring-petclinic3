@@ -60,11 +60,12 @@ jobs:
  #       name: jar-artifact
  #       path: target/
     
- #   - name: list directories and files
- #     run: |
- #       pwd
- #       ls -la
- #       ls -la target
+    - name: list directories and files
+      run: |
+        #pwd
+        #ls -la
+        ls -la /home/runner/work/spring-petclinic2/spring-petclinic2
+        ls -la /target
 
     - name: Step 8 - Build Docker image
       run: |
