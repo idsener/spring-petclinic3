@@ -30,9 +30,10 @@ jobs:
 
     - name: Step 5 - Package the project as a runnable Docker image
       run: | 
-        mvn -B package -DskipTests        
-        uses: mr-smithers-excellent/docker-build-push@v6
-        with:
+        mvn -B package -DskipTests   
+    
+    - uses: mr-smithers-excellent/docker-build-push@v6
+      with:
         image: dsener/petclinic2
         tags: latest
         #registry: ilaysener.jfrog.io
