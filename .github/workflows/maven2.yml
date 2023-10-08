@@ -33,13 +33,7 @@ jobs:
   
     - name: Step 5 - Package the project as a runnable Docker image
       run: | 
-        mvn -B package -DskipTests
-        # The following is necessary as .dockerignore has reference to 'target' folder. You can remove the below if you exclude 'target' 
-        # folder from the .dockerignore.
-        cp target/spring-petclinic-*.jar spring-petclinic.jar  
-        
-    
-  
+        mvn -B package -DskipTests        
 
  
     - name: Step 8 - Build Docker image
