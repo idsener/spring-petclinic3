@@ -13,6 +13,10 @@ jobs:
         uses: actions/checkout@v2
         
 
+      - name: Package the project as a runnable jar file
+        run: | 
+          mvn -B package -DskipTests   
+        
       - name: Setup JFrog CLI
         uses: jfrog/setup-jfrog-cli@v3
         env:
