@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        
 
       - name: Setup JFrog CLI
         uses: jfrog/setup-jfrog-cli@v3
@@ -22,6 +23,8 @@ jobs:
         env:
           IMAGE_NAME: dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:${{ github.run_number }}
         run: |
+          pwd
+          ls -la
           jf docker build -t $IMAGE_NAME .
           jf docker push $IMAGE_NAME
           
