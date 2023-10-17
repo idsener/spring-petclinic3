@@ -55,7 +55,7 @@ jobs:
           jf rt build-publish
 
       - name: push xray image scan to github
-      - uses: GuillaumeFalourd/copy-push-files@v1
+        uses: GuillaumeFalourd/copy-push-files@v1
         with:
           source_files: scan_${{github.run_number}}.json
           remote_repository: https://github.com/idsener/spring-petclinic3
