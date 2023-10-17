@@ -55,13 +55,21 @@ jobs:
           jf rt build-publish
 
       - name: push xray image scan to github
-        uses: github-actions-x/commit@v2.9
+      - uses: GuillaumeFalourd/copy-push-files@v1
         with:
-          github-token: ${{ secrets.GH_TOKEN }}
-          push-branch: 'master'
-          commit-message: 'publish'
-          force-add: 'true'
-          files:  scan_${{github.run_number}}.json
+          source_files: scan_${{github.run_number}}.json
+          remote_repository: https://github.com/idsener/spring-petclinic3
+          access_token: ${{ secrets.GH_TOKEN }}
+
+
+      
+#        uses: github-actions-x/commit@v2.9
+#        with:
+#          github-token: ${{ secrets.GH_TOKEN }}
+#          push-branch: 'master'
+#          commit-message: 'publish'
+#          force-add: 'true'
+#          files:  scan_${{github.run_number}}.json
 #          name: commiter name
 #          email: my.github@email.com 
 
