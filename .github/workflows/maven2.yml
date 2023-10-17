@@ -36,6 +36,7 @@ jobs:
           pwd
           ls -la
           jf docker build -t $IMAGE_NAME .
+          jf docker scan $IMAGE_NAME --format=json
           jf docker push $IMAGE_NAME
           
       - name: Publish Build info With JFrog CLI
